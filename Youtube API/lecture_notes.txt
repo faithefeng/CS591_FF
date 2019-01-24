@@ -1,0 +1,35 @@
+YouTube API: landslide videos
+objective: learn how to perform a search using YouTube API
+
+virtualenv is a tool to create isolated Python environments. virtualenv creates a folder which contains all the necessary executables to use the packages that a Python project would need.
+
+#check if python is installed
+python --version
+
+#check if pip is installed
+pip --version
+
+#install virtualenv
+pip install virtualenv
+
+#check if virtualenv is installed correctly
+virtualenv --version
+
+#create project folder
+mkdir cs491
+
+#create virtual environment for Python 2.7
+virtualenv -p /usr/bin/python2.7 venv2.7
+
+#activate newly created virtual environment
+source venv2.7/bin/activate
+
+#google: youtube data api python
+#Step 1. Use wizard to create API key
+#Step 2. Install Google APIs Client Library
+pip install --upgrade google-api-python-client
+#Step 3. Install additional libraries
+pip install --upgrade google-auth google-auth-oauthlib google-auth-httplib2
+pip install --upgrade oauth2client
+#Step 4. google: youtube data api sample
+#sample: Search for videos related to a keyword

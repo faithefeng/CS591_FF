@@ -1,0 +1,43 @@
+Twitter Streaming API: landslide tweets
+objective: learn how to perform a search using Twitter Search API and Twitter Streaming API
+
+#create Twitter account if needed
+https://twitter.com/signup
+
+#create Twitter app
+https://apps.twitter.com/
+-click on Keys and Access Tokens
+-create my access token
+-save these values:
+	Access Token
+	Access Token Secret
+	Consumer Key (API Key)
+	Consumer Secret (API Secret)
+
+#go to project folder
+cd cs491_Spring2019
+
+#activate virtual environment
+source venv2.7/bin/activate
+
+#install Python Twitter Tools
+pip install twitter
+
+#search for "twitter python sample code"
+https://github.com/ideoforms/python-twitter-examples
+
+#copy config.py
+curl -O https://raw.githubusercontent.com/ideoforms/python-twitter-examples/master/config.py
+
+#modify config.py accordingly
+-consumer key, consumer secret key, access key, access key secret
+
+#copy twitter-search.py
+curl -O https://raw.githubusercontent.com/ideoforms/python-twitter-examples/master/twitter-search.py
+
+#run twitter-search.py
+python twitter-search.py
+
+#run twitter-stream-search.py
+pip install termcolor
+python twitter-stream-search.py
