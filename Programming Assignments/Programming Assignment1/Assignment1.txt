@@ -1,0 +1,9 @@
+Determine the top 100 most viewed YouTube videos *that were posted* in 2018 containing the word "landslide". For each video, print id, title, and view count.
+ Upload the following files as part of your submission:
+
+source code (Python or Java)
+README with instructions on how to run the code
+report consisting of 101 lines, where:
+first line is formatted as follows (without <> symbols): <startDate>\t<endDate>\n
+all other lines are formatted as follows (without <> symbols): <video_id>\t<title>\t<viewCount>\n
+Deadline: Jan 27 at 11:59pm

@@ -20,7 +20,7 @@ def youtube_search(options):
   # Call the search.list method to retrieve results matching the specified
   # query term.
   search_response = youtube.search().list(
-    q=options.q,
+    q=options.query,
     part="id,snippet",
     maxResults=options.max_results
   ).execute()
@@ -48,7 +48,7 @@ def youtube_search(options):
 
 
 if __name__ == "__main__":
-  argparser.add_argument("--q", help="Search term", default="Google")
+  argparser.add_argument("--query", help="Search term", default="Google")
   argparser.add_argument("--max-results", help="Max results", default=25)
   args = argparser.parse_args()
 
